@@ -1,0 +1,13 @@
+Modcom Institutes of Technology where innovation controls the future 
+
+� What Happened? 
+1. The program tells Node to read the file and gives it a callback to run later. 
+2. Then it moves on and prints "Program Ended". 
+3. When the file finishes reading, the callback runs and prints the contents. 
+✅ This is how Node.js stays fast and scalable!  
+�
+�️ Analogy: Smart Restaurant Waiter 
+You order food and go sit down. The waiter continues serving other customers. 
+When your food is ready, the waiter brings it to your table — that’s the callback being 
+called. 
+Blocking vs Non-Blocking – Side-by-Side Comparison 
