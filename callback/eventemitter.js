@@ -1,44 +1,15 @@
+// we need to use events which is a core module in node
 const EventsEmitter=require("events")
-
+// we have a class which we need to create its instance to access events methods
 const eventEmitter= new EventsEmitter()
 
-eventEmitter.on('start', (number) => { 
-  console.log(`Started with number: ${number}`); 
+//using the eventEmitter instance we can access method .on 
+// .on acts as our listener if any event has been triggered  
+eventEmitter.on('start', () => { 
+  console.log(`Good Morning `); 
 }); 
-eventEmitter.emit('start', 23); 
 
+// .emit act as the trigger so when the event is fired the listener will hear it
+// and will execute some block of code
+eventEmitter.emit('start'); 
 
-
-
-// // orderEmitter.js
-
-// const EventEmitter = require('events');
-
-// // Create an instance of EventEmitter
-// const orderEmitter = new EventEmitter();
-
-// // Listener: Log order details
-// orderEmitter.on('orderPlaced', (orderId) => {
-//   console.log(`✅ Order #${orderId} placed.`);
-// });
-
-// // Listener: Send confirmation
-// orderEmitter.on('orderPlaced', (orderId) => {
-//   console.log(`📧 Sending confirmation for order #${orderId}.`);
-// });
-
-// // Listener: Check stock
-// orderEmitter.on('orderPlaced', (orderId) => {
-//   console.log(`📦 Checking stock for order #${orderId}...`);
-// });
-
-// // Simulate placing orders
-// function placeOrder(orderId) {
-//   console.log('\n--- New Order Incoming ---');
-//   orderEmitter.emit('orderPlaced', orderId);
-// }
-
-// // Simulate a few orders
-// placeOrder(101);
-// placeOrder(102);
-// placeOrder(103);
