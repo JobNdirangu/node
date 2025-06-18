@@ -3,10 +3,10 @@ const fs = require("fs");
 const chalk =require("chalk")
 
 fs.readFile('input.txt', function (err, data) { 
-    console.log(chalk.redBright(data.toString()));
+    console.log(chalk.bgBlue.whiteBright(data.toString()));
     
 }); 
-console.log("Finished input long Program Ended");
+console.log(chalk.bgWhite.redBright("Finished input long Program Ended"));
 
 // fs.readFile('input.txt', function (err, data) { 
     
