@@ -3,8 +3,8 @@ const fs = require('fs');
 
 
 const server=http.createServer((req,res)=>{
-   
-    res.writeHead(200,{'content-type':'html'})
+  
+    res.writeHead(200,{'content-type':'text'})
     res.end("Node js ")
 
 })
